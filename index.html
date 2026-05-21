@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Evolución de captación · Clínica Dental Montsià · Últimos 6 meses</title>
+<style>
+  :root{
+    --navy:#1F4E8C;
+    --navy-deep:#0F2A4D;
+    --blue:#4A90D9;
+    --blue-light:#7DB9E8;
+    --ink:#11233F;
+    --muted:#5A6B82;
+    --line:#E4ECF5;
+    --bg:#F7FAFD;
+    --paper:#FFFFFF;
+    --good:#1F8A5C;
+    --bad:#C0392B;
+    --warn:#B26A00;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55}
+  a{color:var(--navy)}
+  .wrap{max-width:880px;margin:0 auto;padding:48px 28px 96px}
+  header.brand{display:flex;align-items:center;gap:18px;padding-bottom:32px;border-bottom:1px solid var(--line);margin-bottom:40px}
+  header.brand img{height:64px;width:auto;display:block}
+  header.brand .meta{font-size:13px;color:var(--muted);margin-left:auto;text-align:right;line-height:1.45}
+  header.brand .meta b{color:var(--ink);font-weight:600}
+  h1{font-size:34px;line-height:1.2;margin:0 0 8px;letter-spacing:-0.01em;color:var(--navy-deep);font-weight:700}
+  .lead{font-size:17px;color:var(--muted);margin:0 0 8px}
+  .periodo{display:inline-flex;align-items:center;gap:10px;font-size:13px;color:var(--navy);background:#EAF2FB;padding:6px 12px;border-radius:999px;margin-top:14px}
+  .periodo b{font-weight:600}
+  .tldr{margin:36px 0 0;background:var(--navy-deep);color:#fff;border-radius:14px;padding:28px 30px;box-shadow:0 18px 40px -24px rgba(15,42,77,.5)}
+  .tldr h2{margin:0 0 14px;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-light);font-weight:600}
+  .tldr p{margin:0;font-size:17px;line-height:1.55;color:#E8EEF7}
+  .tldr p + p{margin-top:12px}
+  .tldr b{color:#fff;font-weight:600}
+  section{margin-top:56px}
+  section > h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);font-weight:600;margin:0 0 10px}
+  section > h3{font-size:26px;margin:0 0 8px;color:var(--navy-deep);font-weight:700;letter-spacing:-0.01em}
+  section > .sub{margin:0 0 24px;color:var(--muted);font-size:15px}
+  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 26px}
+  .kpi{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px}
+  .kpi .label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px}
+  .kpi .val{font-size:24px;font-weight:700;color:var(--navy-deep);line-height:1.1}
+  .kpi .delta{font-size:12px;margin-top:6px;font-weight:600}
+  .delta.neg{color:var(--bad)}
+  .delta.pos{color:var(--good)}
+  .delta.flat{color:var(--muted)}
+  table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14.5px}
+  thead th{background:#EFF4FA;color:var(--navy-deep);text-align:left;padding:12px 14px;font-weight:600;font-size:13px;letter-spacing:.02em;border-bottom:1px solid var(--line)}
+  thead th.num{text-align:right}
+  tbody td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody td.num{text-align:right;font-variant-numeric:tabular-nums}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr.total td{background:#F4F8FC;font-weight:600;color:var(--navy-deep)}
+  .neg{color:var(--bad);font-weight:600}
+  .pos{color:var(--good);font-weight:600}
+  .flat{color:var(--muted)}
+  .callout{margin-top:22px;padding:18px 20px;background:#FFF7E9;border-left:4px solid var(--warn);border-radius:10px;font-size:15px;color:#5C4111}
+  .callout b{color:#3D2C0A}
+  .callout.danger{background:#FBEBE9;border-left-color:var(--bad);color:#5C1812}
+  .callout.danger b{color:#3D0E0B}
+  .callout.good{background:#E9F6EF;border-left-color:var(--good);color:#143E2B}
+  .callout.good b{color:#0B2A1C}
+  .conclusion{margin-top:64px;padding:32px;background:linear-gradient(135deg,var(--navy-deep) 0%, var(--navy) 100%);color:#fff;border-radius:16px}
+  .conclusion h2{margin:0 0 14px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-light);font-weight:600}
+  .conclusion h3{margin:0 0 18px;font-size:24px;line-height:1.3;color:#fff;font-weight:600;letter-spacing:-0.005em}
+  .conclusion ul{margin:0;padding-left:20px;color:#E8EEF7;font-size:15.5px;line-height:1.7}
+  .conclusion ul li{margin-bottom:6px}
+  .conclusion ul li b{color:#fff}
+  footer.sig{margin-top:56px;padding-top:28px;border-top:1px solid var(--line);display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  footer.sig .who{font-size:14px;color:var(--muted);line-height:1.5}
+  footer.sig .who b{color:var(--ink);display:block;font-size:15px;font-weight:600}
+  footer.sig .who a{color:var(--navy);text-decoration:none}
+  footer.sig .who a:hover{text-decoration:underline}
+  footer.sig .stamp{font-size:12px;color:var(--muted);text-align:right}
+  .note{font-size:13px;color:var(--muted);margin-top:14px;font-style:italic}
+  @media (max-width:640px){
+    .wrap{padding:32px 18px 64px}
+    h1{font-size:26px}
+    section > h3{font-size:22px}
+    header.brand{flex-wrap:wrap}
+    header.brand .meta{margin-left:0;text-align:left;width:100%}
+    .kpis{grid-template-columns:1fr 1fr}
+    .kpi .val{font-size:20px}
+    table{font-size:13.5px}
+    thead th,tbody td{padding:10px 10px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="brand">
+    <img src="logo-montsia.png" alt="Clínica Dental Montsià">
+    <div class="meta">
+      <b>Informe de captación</b><br>
+      Preparado el 21 de mayo de 2026
+    </div>
+  </header>
+
+  <h1>Qué ha pasado con la captación los últimos 6 meses</h1>
+  <p class="lead">Análisis comparativo de los canales que generan pacientes: Google Ads, Meta Ads y SEO. Datos cruzados desde Google Ads, Business Manager y Google Search Console.</p>
+  <span class="periodo"><b>Últimos 6 meses:</b> 19 nov 2025 → 19 may 2026 &nbsp;·&nbsp; <b>Anterior:</b> 21 may → 18 nov 2025</span>
+
+  <div class="tldr">
+    <h2>Resumen ejecutivo</h2>
+    <p>En los últimos 6 meses la cuenta ha funcionado en <b>piloto automático</b>, sin gestión activa de campañas, sin nuevas creatividades y sin ajustes de pujas.</p>
+    <p>El resultado: <b>−70 % de contactos generados en Google Ads</b> (de 579 a 176), <b>−94 % de inversión en Meta</b> (de 2.063 € a 117 €) con <b>0 leads cualificados</b> de las campañas que antes traían pacientes, y un Performance Max <b>completamente apagado</b> que era el que aportaba el grueso de las llamadas urgentes.</p>
+    <p>El único motor que sigue trayendo visibilidad es <b>la inercia del SEO</b> de los artículos antiguos del blog. Pero las búsquedas locales de marca —las que llenan agenda— ya empiezan a desinflarse.</p>
+  </div>
+
+  <!-- ========== GOOGLE ADS ========== -->
+  <section>
+    <h2>Canal 01 · Google Ads</h2>
+    <h3>−70 % de contactos generados con la cuenta cuasi-apagada</h3>
+    <p class="sub">La cuenta solo mantiene viva una campaña de Search con 4 €/día de presupuesto. Performance Max, que aportaba el grueso de las llamadas, está pausada al 100 %.</p>
+
+    <div class="kpis">
+      <div class="kpi"><div class="label">Inversión total cuenta</div><div class="val">176 €</div><div class="delta neg">−70 % vs 579 €</div></div>
+      <div class="kpi"><div class="label">Impresiones</div><div class="val">7.013</div><div class="delta neg">−94 % vs 124.668</div></div>
+      <div class="kpi"><div class="label">Clics</div><div class="val">1.201</div><div class="delta neg">−55 % vs 2.677</div></div>
+    </div>
+
+    <table>
+      <thead><tr>
+        <th>Tipo de contacto generado</th>
+        <th class="num">Anterior</th>
+        <th class="num">Actual</th>
+        <th class="num">Variación</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>Llamadas normales</td><td class="num">178</td><td class="num">88</td><td class="num neg">−51 %</td></tr>
+        <tr><td>Llamadas urgentes</td><td class="num">311</td><td class="num">24</td><td class="num neg">−92 %</td></tr>
+        <tr><td>Clics a WhatsApp</td><td class="num">56</td><td class="num">24</td><td class="num neg">−57 %</td></tr>
+        <tr><td>Leads de formulario</td><td class="num">31</td><td class="num">37</td><td class="num pos">+19 %</td></tr>
+        <tr><td>Llamadas Smart Campaign</td><td class="num">3</td><td class="num">3</td><td class="num flat">=</td></tr>
+        <tr class="total"><td>Total contactos cuenta</td><td class="num">579</td><td class="num">176</td><td class="num neg">−70 %</td></tr>
+      </tbody>
+    </table>
+
+    <table style="margin-top:18px">
+      <thead><tr>
+        <th>Aporte por tipo de campaña</th>
+        <th class="num">Anterior</th>
+        <th class="num">Actual</th>
+        <th class="num">Variación</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>Performance Max <span class="flat">(captación masiva)</span></td><td class="num">380</td><td class="num">0</td><td class="num neg">−100 %</td></tr>
+        <tr><td>Search <span class="flat">(la única activa hoy)</span></td><td class="num">199</td><td class="num">176</td><td class="num neg">−12 %</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout danger">
+      <b>Lectura clave:</b> el agujero no está en que Search funcione peor — Search aguanta más o menos. El agujero está en que <b>Performance Max está apagada</b> y era la que traía 268 llamadas urgentes, 87 normales y 25 WhatsApp en los 6 meses anteriores. Hoy: cero.
+    </div>
+  </section>
+
+  <!-- ========== META ADS ========== -->
+  <section>
+    <h2>Canal 02 · Meta Ads (Facebook + Instagram)</h2>
+    <h3>De 2.063 € invertidos a 117 €: prácticamente apagada</h3>
+    <p class="sub">El 94 % de la inversión publicitaria en Meta ha desaparecido. Solo quedan dos campañas de formulario en remanente, sin renovación creativa.</p>
+
+    <div class="kpis">
+      <div class="kpi"><div class="label">Inversión Meta</div><div class="val">117 €</div><div class="delta neg">−94 % vs 2.063 €</div></div>
+      <div class="kpi"><div class="label">Leads de formulario</div><div class="val">4</div><div class="delta neg">−88 % vs 34</div></div>
+      <div class="kpi"><div class="label">Visitas al perfil (sorteo)</div><div class="val">0</div><div class="delta neg">−100 % vs 2.822</div></div>
+    </div>
+
+    <table>
+      <thead><tr>
+        <th>Campaña</th>
+        <th class="num">Inversión ant.</th>
+        <th class="num">Inversión actual</th>
+        <th class="num">Resultado ant.</th>
+        <th class="num">Resultado act.</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>PRO - Leads</td><td class="num">374 €</td><td class="num neg">0 €</td><td class="num">—</td><td class="num">—</td></tr>
+        <tr><td>PRO - Leads - Odontopediatra</td><td class="num">75 €</td><td class="num neg">0 €</td><td class="num">—</td><td class="num">—</td></tr>
+        <tr><td>PRO - Leads - Odontopediatra [Form]</td><td class="num">756 €</td><td class="num neg">21 €</td><td class="num">19 leads</td><td class="num neg">1 lead</td></tr>
+        <tr><td>PRO - Form - Empleo Director Dental</td><td class="num">0 €</td><td class="num">96 €</td><td class="num">—</td><td class="num">3 leads</td></tr>
+        <tr><td>New Engagement Campaign</td><td class="num">446 €</td><td class="num neg">0 €</td><td class="num">15 conv.</td><td class="num">—</td></tr>
+        <tr><td>SORTEO DICIEMBRE</td><td class="num">411 €</td><td class="num neg">0 €</td><td class="num">2.822 visitas perfil</td><td class="num">—</td></tr>
+        <tr class="total"><td>Total Meta</td><td class="num">2.063 €</td><td class="num">117 €</td><td class="num">34 leads + 2.822 visitas</td><td class="num">4 leads</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <b>Lectura clave:</b> el sorteo de diciembre fue una pieza estacional de marca que en 6 meses aportó <b>2.822 visitas al perfil de Instagram</b> por 411 €. Este año no se ha replicado nada en su lugar — ni sorteo, ni promoción navideña, ni captación de pacientes nuevos por Meta.
+    </div>
+  </section>
+
+  <!-- ========== SEO ========== -->
+  <section>
+    <h2>Canal 03 · SEO orgánico (Google Search Console)</h2>
+    <h3>Sube el tráfico total, pero cae la búsqueda local de marca</h3>
+    <p class="sub">El SEO funciona por inercia: los artículos antiguos del blog (bandas de ortodoncia, bulto en el paladar, bruxismo diurno…) siguen rankeando y traen más clics. Pero la métrica que importa —que un paciente de Amposta busque la clínica— está cayendo.</p>
+
+    <div class="kpis">
+      <div class="kpi"><div class="label">Clics totales (móvil)</div><div class="val">2.292</div><div class="delta pos">+47 % vs 1.562</div></div>
+      <div class="kpi"><div class="label">Posición media (móvil)</div><div class="val">5,97</div><div class="delta pos">mejor que 11,53</div></div>
+      <div class="kpi"><div class="label">CTR (móvil)</div><div class="val">0,47 %</div><div class="delta neg">−32 % vs 0,69 %</div></div>
+    </div>
+
+    <p style="margin:18px 0 10px;font-size:15px;color:var(--ink)"><b>El problema:</b> las búsquedas que de verdad llenan agenda —las que mencionan el nombre o la ubicación de la clínica— han caído todas:</p>
+
+    <table>
+      <thead><tr>
+        <th>Búsqueda local / de marca</th>
+        <th class="num">Clics ant.</th>
+        <th class="num">Clics act.</th>
+        <th class="num">Variación</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>clinica dental montsia</td><td class="num">165</td><td class="num">97</td><td class="num neg">−41 %</td></tr>
+        <tr><td>clinica dental montsia amposta</td><td class="num">76</td><td class="num">74</td><td class="num flat">−3 %</td></tr>
+        <tr><td>clinica dental amposta</td><td class="num">74</td><td class="num">63</td><td class="num neg">−15 %</td></tr>
+        <tr><td>clínica dental amposta</td><td class="num">18</td><td class="num">11</td><td class="num neg">−39 %</td></tr>
+        <tr><td>dentistas amposta</td><td class="num">13</td><td class="num">8</td><td class="num neg">−38 %</td></tr>
+        <tr><td>clinica montsia amposta</td><td class="num">30</td><td class="num">27</td><td class="num neg">−10 %</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout good">
+      <b>La cara positiva:</b> el contenido del blog que se publicó hace tiempo sigue trabajando solo. Artículos como <i>"bandas de ortodoncia"</i>, <i>"bulto en el paladar"</i> o <i>"bruxismo diurno"</i> aportan miles de impresiones nuevas. Pero ese tráfico es informacional (gente investigando, no pacientes locales).
+    </div>
+    <div class="callout danger" style="margin-top:14px">
+      <b>La cara preocupante:</b> cuando alguien en Amposta busca específicamente "clinica dental montsia" o "clinica dental amposta", está clicando menos en la clínica. Esto es señal de pérdida de presencia activa en el mercado local: menos reseñas nuevas, sin actualizaciones de ficha, sin contenido fresco.
+    </div>
+  </section>
+
+  <!-- ========== CONCLUSIÓN ========== -->
+  <div class="conclusion">
+    <h2>Conclusión</h2>
+    <h3>Sin supervisión activa, la cuenta se desangra silenciosamente. La inercia del trabajo previo aguanta, pero no es sostenible.</h3>
+    <ul>
+      <li><b>Google Ads:</b> 403 contactos menos generados en 6 meses (579 → 176). Performance Max apagada al 100 %.</li>
+      <li><b>Meta Ads:</b> inversión reducida un 94 %. Sin sorteo navideño, sin renovación creativa, sin captación nueva.</li>
+      <li><b>SEO local de marca:</b> entre −15 % y −41 % de clics en las búsquedas que traen pacientes de Amposta y comarca.</li>
+      <li><b>El único motor que sigue tirando</b> son los artículos del blog publicados hace años — pero ese tráfico no se convierte en pacientes locales, solo en lectores.</li>
+    </ul>
+    <p style="margin:22px 0 0;font-size:15px;color:#E8EEF7;line-height:1.6">El piloto automático funcionó los primeros meses por inercia. A partir del sexto, la curva ya rompe. Lo que se pierde aquí <b style="color:#fff">no es presupuesto invertido — son pacientes que no han entrado por la puerta</b>.</p>
+  </div>
+
+  <footer class="sig">
+    <div class="who">
+      <b>Josep Cid</b>
+      Análisis preparado para Clínica Dental Montsià<br>
+      <a href="mailto:hola@josepcid.com">hola@josepcid.com</a> · <a href="https://josepcid.com">josepcid.com</a>
+    </div>
+    <div class="stamp">
+      Fuentes: Google Ads, Meta Business Manager, Google Search Console.<br>
+      Periodo comparado: 19 nov 2025 → 19 may 2026 vs 21 may → 18 nov 2025.
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
