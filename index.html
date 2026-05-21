@@ -37,14 +37,19 @@
   .tldr p{margin:0;font-size:17px;line-height:1.55;color:#E8EEF7}
   .tldr p + p{margin-top:12px}
   .tldr b{color:#fff;font-weight:600}
+  .context{margin-top:22px;padding:20px 22px;background:#FFFFFF;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:10px;font-size:14.5px;color:var(--ink);line-height:1.65}
+  .context b{color:var(--navy-deep)}
   section{margin-top:56px}
   section > h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);font-weight:600;margin:0 0 10px}
   section > h3{font-size:26px;margin:0 0 8px;color:var(--navy-deep);font-weight:700;letter-spacing:-0.01em}
   section > .sub{margin:0 0 24px;color:var(--muted);font-size:15px}
   .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 26px}
   .kpi{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px}
+  .kpi.hero{background:linear-gradient(135deg,#FBEBE9 0%, #F8E0DC 100%);border-color:#F0C7C2}
   .kpi .label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px}
+  .kpi.hero .label{color:#7A2A20}
   .kpi .val{font-size:24px;font-weight:700;color:var(--navy-deep);line-height:1.1}
+  .kpi.hero .val{color:#7A2A20}
   .kpi .delta{font-size:12px;margin-top:6px;font-weight:600}
   .delta.neg{color:var(--bad)}
   .delta.pos{color:var(--good)}
@@ -59,7 +64,7 @@
   .neg{color:var(--bad);font-weight:600}
   .pos{color:var(--good);font-weight:600}
   .flat{color:var(--muted)}
-  .callout{margin-top:22px;padding:18px 20px;background:#FFF7E9;border-left:4px solid var(--warn);border-radius:10px;font-size:15px;color:#5C4111}
+  .callout{margin-top:22px;padding:18px 20px;background:#FFF7E9;border-left:4px solid var(--warn);border-radius:10px;font-size:15px;color:#5C4111;line-height:1.6}
   .callout b{color:#3D2C0A}
   .callout.danger{background:#FBEBE9;border-left-color:var(--bad);color:#5C1812}
   .callout.danger b{color:#3D0E0B}
@@ -69,15 +74,16 @@
   .conclusion h2{margin:0 0 14px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-light);font-weight:600}
   .conclusion h3{margin:0 0 18px;font-size:24px;line-height:1.3;color:#fff;font-weight:600;letter-spacing:-0.005em}
   .conclusion ul{margin:0;padding-left:20px;color:#E8EEF7;font-size:15.5px;line-height:1.7}
-  .conclusion ul li{margin-bottom:6px}
+  .conclusion ul li{margin-bottom:8px}
   .conclusion ul li b{color:#fff}
+  .conclusion .cta{margin-top:22px;font-size:15.5px;color:#E8EEF7;line-height:1.65}
+  .conclusion .cta b{color:#fff}
   footer.sig{margin-top:56px;padding-top:28px;border-top:1px solid var(--line);display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
   footer.sig .who{font-size:14px;color:var(--muted);line-height:1.5}
   footer.sig .who b{color:var(--ink);display:block;font-size:15px;font-weight:600}
   footer.sig .who a{color:var(--navy);text-decoration:none}
   footer.sig .who a:hover{text-decoration:underline}
   footer.sig .stamp{font-size:12px;color:var(--muted);text-align:right}
-  .note{font-size:13px;color:var(--muted);margin-top:14px;font-style:italic}
   @media (max-width:640px){
     .wrap{padding:32px 18px 64px}
     h1{font-size:26px}
@@ -102,27 +108,89 @@
     </div>
   </header>
 
-  <h1>Qué ha pasado con la captación los últimos 6 meses</h1>
-  <p class="lead">Análisis comparativo de los canales que generan pacientes: Google Ads, Meta Ads y SEO. Datos cruzados desde Google Ads, Business Manager y Google Search Console.</p>
+  <h1>El coste de captar cada paciente está subiendo en todos los canales</h1>
+  <p class="lead">Análisis comparativo de los canales que generan pacientes: Meta Ads, Google Ads y SEO orgánico. Datos cruzados desde Business Manager, Google Ads y Google Search Console.</p>
   <span class="periodo"><b>Últimos 6 meses:</b> 19 nov 2025 → 19 may 2026 &nbsp;·&nbsp; <b>Anterior:</b> 21 may → 18 nov 2025</span>
 
   <div class="tldr">
     <h2>Resumen ejecutivo</h2>
-    <p>En los últimos 6 meses la cuenta ha funcionado en <b>piloto automático</b>, sin gestión activa de campañas, sin nuevas creatividades y sin ajustes de pujas.</p>
-    <p>El resultado: <b>−70 % de contactos generados en Google Ads</b> (de 579 a 176), <b>−94 % de inversión en Meta</b> (de 2.063 € a 117 €) con <b>0 leads cualificados</b> de las campañas que antes traían pacientes, y un Performance Max <b>completamente apagado</b> que era el que aportaba el grueso de las llamadas urgentes.</p>
-    <p>El único motor que sigue trayendo visibilidad es <b>la inercia del SEO</b> de los artículos antiguos del blog. Pero las búsquedas locales de marca —las que llenan agenda— ya empiezan a desinflarse.</p>
+    <p>En los últimos 6 meses la cuenta ha funcionado <b>sin una gestión continuada</b>. El resultado es claro: <b>captar a cada paciente cuesta entre un 23 % y un 31 % más</b> que hace 6 meses, y la maquinaria que más volumen aporta (Meta para implantología) <b>ha pasado de 5 campañas activas a solo 2</b> — sin renovación creativa ni nuevos públicos.</p>
+    <p>La estrategia está bien planteada: el giro hacia Meta para captar implantología sigue trayendo el tipo de paciente correcto. Pero <b>cada euro está rindiendo menos</b> que en el periodo anterior porque nadie está optimizando pujas, públicos, palabras clave ni creatividades a ritmo semanal.</p>
   </div>
+
+  <div class="context">
+    A lo largo de estos 6 meses he ido lanzando puntualmente alguna campaña y alguna iteración para intentar sostener el rendimiento, aunque <b>sin un mandato formal de gestión continuada</b>. Los números que siguen reflejan, por tanto, el coste real de no tener supervisión estructurada — no la ausencia total de actividad. Con gestión semanal, estos indicadores cambian.
+  </div>
+
+  <!-- ========== META ADS ========== -->
+  <section>
+    <h2>Canal 01 · Meta Ads (Facebook + Instagram)</h2>
+    <h3>Cuesta un 31 % más captar el mismo tipo de lead</h3>
+    <p class="sub">Es el canal donde más se invierte hoy. Mantiene la captación de leads de implantología (el paciente que más vale), pero el coste por cada uno de ellos no para de crecer y el portfolio se ha estrechado.</p>
+
+    <div class="kpis">
+      <div class="kpi hero"><div class="label">CPL Meta</div><div class="val">15,77 €</div><div class="delta neg">+31 % vs 12,06 €</div></div>
+      <div class="kpi"><div class="label">Inversión</div><div class="val">1.167 €</div><div class="delta flat">+15 % vs 1.013 €</div></div>
+      <div class="kpi"><div class="label">Leads pixel</div><div class="val">74</div><div class="delta neg">−12 % vs 84</div></div>
+    </div>
+
+    <table>
+      <thead><tr>
+        <th>Indicador Meta</th>
+        <th class="num">Anterior</th>
+        <th class="num">Actual</th>
+        <th class="num">Variación</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>Inversión publicitaria</td><td class="num">1.013 €</td><td class="num">1.167 €</td><td class="num flat">+15 %</td></tr>
+        <tr><td>Impresiones</td><td class="num">264.793</td><td class="num">300.377</td><td class="num pos">+13 %</td></tr>
+        <tr><td>Alcance (personas distintas)</td><td class="num">32.111</td><td class="num">57.189</td><td class="num pos">+78 %</td></tr>
+        <tr><td>Clics a enlace</td><td class="num">3.634</td><td class="num">5.414</td><td class="num pos">+49 %</td></tr>
+        <tr><td>Leads de formulario (pixel)</td><td class="num">84</td><td class="num">74</td><td class="num neg">−12 %</td></tr>
+        <tr class="total"><td>Coste por lead (CPL)</td><td class="num">12,06 €</td><td class="num">15,77 €</td><td class="num neg">+31 %</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin:24px 0 12px;font-size:15px;color:var(--ink)"><b>Diversificación de campañas — el portfolio se ha estrechado:</b></p>
+
+    <table>
+      <thead><tr>
+        <th>Periodo</th>
+        <th>Campañas activas</th>
+        <th class="num">Inversión</th>
+        <th class="num">Leads</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td>Anterior</td>
+          <td>5 campañas · PRO-Leads, Odontopediatra, Form Odontopediatra, Form Empleo, Leads-Form</td>
+          <td class="num">1.013 €</td>
+          <td class="num">84</td>
+        </tr>
+        <tr>
+          <td>Actual</td>
+          <td>2 campañas · Leads-Form (heredada del año pasado) + Navidad (engagement, 0 conv.)</td>
+          <td class="num">1.167 €</td>
+          <td class="num">74</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <b>Lectura:</b> el aumento de impresiones, alcance y clics es real — pero no se está convirtiendo. Esto pasa cuando los anuncios llevan tiempo en rotación sin renovación creativa: el público los ha visto demasiadas veces (frecuencia 5,25 vs 8,25 antes, una mejora — pero los creativos siguen siendo los mismos). <b>Refrescar creatividades y abrir 2-3 públicos nuevos por especialidad devolvería el CPL a niveles del periodo anterior.</b>
+    </div>
+  </section>
 
   <!-- ========== GOOGLE ADS ========== -->
   <section>
-    <h2>Canal 01 · Google Ads</h2>
-    <h3>−70 % de contactos generados con la cuenta cuasi-apagada</h3>
-    <p class="sub">La cuenta solo mantiene viva una campaña de Search con 4 €/día de presupuesto. Performance Max, que aportaba el grueso de las llamadas, está pausada al 100 %.</p>
+    <h2>Canal 02 · Google Ads (Search)</h2>
+    <h3>+23 % más caro por cada acción de paciente</h3>
+    <p class="sub">La única campaña activa hoy (Leads-Search-1) mantiene prácticamente la misma inversión que hace 6 meses, pero rinde peor: las llamadas urgentes han caído a la mitad, las normales bajan, y el coste por contacto sube un 23 %.</p>
 
     <div class="kpis">
-      <div class="kpi"><div class="label">Inversión total cuenta</div><div class="val">176 €</div><div class="delta neg">−70 % vs 579 €</div></div>
-      <div class="kpi"><div class="label">Impresiones</div><div class="val">7.013</div><div class="delta neg">−94 % vs 124.668</div></div>
-      <div class="kpi"><div class="label">Clics</div><div class="val">1.201</div><div class="delta neg">−55 % vs 2.677</div></div>
+      <div class="kpi hero"><div class="label">Coste / contacto Search</div><div class="val">4,10 €</div><div class="delta neg">+23 % vs 3,33 €</div></div>
+      <div class="kpi"><div class="label">Inversión Search</div><div class="val">722 €</div><div class="delta flat">+9 % vs 663 €</div></div>
+      <div class="kpi"><div class="label">Contactos totales</div><div class="val">176</div><div class="delta neg">−12 % vs 199</div></div>
     </div>
 
     <table>
@@ -133,74 +201,25 @@
         <th class="num">Variación</th>
       </tr></thead>
       <tbody>
-        <tr><td>Llamadas normales</td><td class="num">178</td><td class="num">88</td><td class="num neg">−51 %</td></tr>
-        <tr><td>Llamadas urgentes</td><td class="num">311</td><td class="num">24</td><td class="num neg">−92 %</td></tr>
-        <tr><td>Clics a WhatsApp</td><td class="num">56</td><td class="num">24</td><td class="num neg">−57 %</td></tr>
         <tr><td>Leads de formulario</td><td class="num">31</td><td class="num">37</td><td class="num pos">+19 %</td></tr>
+        <tr><td>Llamadas normales</td><td class="num">91</td><td class="num">88</td><td class="num flat">−3 %</td></tr>
+        <tr><td>Llamadas urgentes</td><td class="num">43</td><td class="num">24</td><td class="num neg">−44 %</td></tr>
+        <tr><td>Clics a WhatsApp</td><td class="num">31</td><td class="num">24</td><td class="num neg">−23 %</td></tr>
         <tr><td>Llamadas Smart Campaign</td><td class="num">3</td><td class="num">3</td><td class="num flat">=</td></tr>
-        <tr class="total"><td>Total contactos cuenta</td><td class="num">579</td><td class="num">176</td><td class="num neg">−70 %</td></tr>
-      </tbody>
-    </table>
-
-    <table style="margin-top:18px">
-      <thead><tr>
-        <th>Aporte por tipo de campaña</th>
-        <th class="num">Anterior</th>
-        <th class="num">Actual</th>
-        <th class="num">Variación</th>
-      </tr></thead>
-      <tbody>
-        <tr><td>Performance Max <span class="flat">(captación masiva)</span></td><td class="num">380</td><td class="num">0</td><td class="num neg">−100 %</td></tr>
-        <tr><td>Search <span class="flat">(la única activa hoy)</span></td><td class="num">199</td><td class="num">176</td><td class="num neg">−12 %</td></tr>
-      </tbody>
-    </table>
-
-    <div class="callout danger">
-      <b>Lectura clave:</b> el agujero no está en que Search funcione peor — Search aguanta más o menos. El agujero está en que <b>Performance Max está apagada</b> y era la que traía 268 llamadas urgentes, 87 normales y 25 WhatsApp en los 6 meses anteriores. Hoy: cero.
-    </div>
-  </section>
-
-  <!-- ========== META ADS ========== -->
-  <section>
-    <h2>Canal 02 · Meta Ads (Facebook + Instagram)</h2>
-    <h3>De 2.063 € invertidos a 117 €: prácticamente apagada</h3>
-    <p class="sub">El 94 % de la inversión publicitaria en Meta ha desaparecido. Solo quedan dos campañas de formulario en remanente, sin renovación creativa.</p>
-
-    <div class="kpis">
-      <div class="kpi"><div class="label">Inversión Meta</div><div class="val">117 €</div><div class="delta neg">−94 % vs 2.063 €</div></div>
-      <div class="kpi"><div class="label">Leads de formulario</div><div class="val">4</div><div class="delta neg">−88 % vs 34</div></div>
-      <div class="kpi"><div class="label">Visitas al perfil (sorteo)</div><div class="val">0</div><div class="delta neg">−100 % vs 2.822</div></div>
-    </div>
-
-    <table>
-      <thead><tr>
-        <th>Campaña</th>
-        <th class="num">Inversión ant.</th>
-        <th class="num">Inversión actual</th>
-        <th class="num">Resultado ant.</th>
-        <th class="num">Resultado act.</th>
-      </tr></thead>
-      <tbody>
-        <tr><td>PRO - Leads</td><td class="num">374 €</td><td class="num neg">0 €</td><td class="num">—</td><td class="num">—</td></tr>
-        <tr><td>PRO - Leads - Odontopediatra</td><td class="num">75 €</td><td class="num neg">0 €</td><td class="num">—</td><td class="num">—</td></tr>
-        <tr><td>PRO - Leads - Odontopediatra [Form]</td><td class="num">756 €</td><td class="num neg">21 €</td><td class="num">19 leads</td><td class="num neg">1 lead</td></tr>
-        <tr><td>PRO - Form - Empleo Director Dental</td><td class="num">0 €</td><td class="num">96 €</td><td class="num">—</td><td class="num">3 leads</td></tr>
-        <tr><td>New Engagement Campaign</td><td class="num">446 €</td><td class="num neg">0 €</td><td class="num">15 conv.</td><td class="num">—</td></tr>
-        <tr><td>SORTEO DICIEMBRE</td><td class="num">411 €</td><td class="num neg">0 €</td><td class="num">2.822 visitas perfil</td><td class="num">—</td></tr>
-        <tr class="total"><td>Total Meta</td><td class="num">2.063 €</td><td class="num">117 €</td><td class="num">34 leads + 2.822 visitas</td><td class="num">4 leads</td></tr>
+        <tr class="total"><td>Total contactos Search</td><td class="num">199</td><td class="num">176</td><td class="num neg">−12 %</td></tr>
       </tbody>
     </table>
 
     <div class="callout">
-      <b>Lectura clave:</b> el sorteo de diciembre fue una pieza estacional de marca que en 6 meses aportó <b>2.822 visitas al perfil de Instagram</b> por 411 €. Este año no se ha replicado nada en su lugar — ni sorteo, ni promoción navideña, ni captación de pacientes nuevos por Meta.
+      <b>Lectura:</b> el síntoma más claro está en las <b>llamadas urgentes (−44 %)</b> — son el tipo de paciente más rentable (caries con dolor, urgencias, segundas opiniones que entran ese mismo día). Sin revisar keywords, pujas y horarios de puja, se han ido perdiendo posiciones en las búsquedas que más valen. <b>Reestructurar la campaña con keywords filtradas y pujas por hora del día recuperaría la mayor parte de esas llamadas.</b>
     </div>
   </section>
 
   <!-- ========== SEO ========== -->
   <section>
     <h2>Canal 03 · SEO orgánico (Google Search Console)</h2>
-    <h3>Sube el tráfico total, pero cae la búsqueda local de marca</h3>
-    <p class="sub">El SEO funciona por inercia: los artículos antiguos del blog (bandas de ortodoncia, bulto en el paladar, bruxismo diurno…) siguen rankeando y traen más clics. Pero la métrica que importa —que un paciente de Amposta busque la clínica— está cayendo.</p>
+    <h3>El blog antiguo sigue trabajando solo — pero el tráfico no es local</h3>
+    <p class="sub">El SEO funciona por inercia: artículos publicados hace años (bandas de ortodoncia, bulto en el paladar, bruxismo diurno...) siguen rankeando y atrayendo más visitas. Es buena noticia para el branding, pero ese tráfico viene de toda España y es informacional — no son pacientes de Amposta listos para reservar.</p>
 
     <div class="kpis">
       <div class="kpi"><div class="label">Clics totales (móvil)</div><div class="val">2.292</div><div class="delta pos">+47 % vs 1.562</div></div>
@@ -208,7 +227,7 @@
       <div class="kpi"><div class="label">CTR (móvil)</div><div class="val">0,47 %</div><div class="delta neg">−32 % vs 0,69 %</div></div>
     </div>
 
-    <p style="margin:18px 0 10px;font-size:15px;color:var(--ink)"><b>El problema:</b> las búsquedas que de verdad llenan agenda —las que mencionan el nombre o la ubicación de la clínica— han caído todas:</p>
+    <p style="margin:18px 0 10px;font-size:15px;color:var(--ink)"><b>Búsquedas locales (las que sí traen pacientes de Amposta y comarca):</b></p>
 
     <table>
       <thead><tr>
@@ -227,25 +246,22 @@
       </tbody>
     </table>
 
-    <div class="callout good">
-      <b>La cara positiva:</b> el contenido del blog que se publicó hace tiempo sigue trabajando solo. Artículos como <i>"bandas de ortodoncia"</i>, <i>"bulto en el paladar"</i> o <i>"bruxismo diurno"</i> aportan miles de impresiones nuevas. Pero ese tráfico es informacional (gente investigando, no pacientes locales).
-    </div>
-    <div class="callout danger" style="margin-top:14px">
-      <b>La cara preocupante:</b> cuando alguien en Amposta busca específicamente "clinica dental montsia" o "clinica dental amposta", está clicando menos en la clínica. Esto es señal de pérdida de presencia activa en el mercado local: menos reseñas nuevas, sin actualizaciones de ficha, sin contenido fresco.
+    <div class="callout">
+      <b>Lectura:</b> tener tráfico orgánico creciendo es positivo, pero <b>el SEO local de marca sí está perdiendo terreno</b>. Aquí no se trata de contenido (los artículos van bien); se trata de mantener la ficha de Google Business Profile fresca con posts y actualizaciones periódicas, y de aprovechar mejor el flujo de reseñas que la clínica ya genera para reforzar el ranking en mapas. Es una palanca pequeña pero defendible.
     </div>
   </section>
 
   <!-- ========== CONCLUSIÓN ========== -->
   <div class="conclusion">
     <h2>Conclusión</h2>
-    <h3>Sin supervisión activa, la cuenta se desangra silenciosamente. La inercia del trabajo previo aguanta, pero no es sostenible.</h3>
+    <h3>Una sola variable explica esta foto: la frecuencia con la que alguien optimiza la cuenta. Todo lo demás (estrategia, canales, públicos) está bien planteado.</h3>
     <ul>
-      <li><b>Google Ads:</b> 403 contactos menos generados en 6 meses (579 → 176). Performance Max apagada al 100 %.</li>
-      <li><b>Meta Ads:</b> inversión reducida un 94 %. Sin sorteo navideño, sin renovación creativa, sin captación nueva.</li>
-      <li><b>SEO local de marca:</b> entre −15 % y −41 % de clics en las búsquedas que traen pacientes de Amposta y comarca.</li>
-      <li><b>El único motor que sigue tirando</b> son los artículos del blog publicados hace años — pero ese tráfico no se convierte en pacientes locales, solo en lectores.</li>
+      <li><b>Meta:</b> CPL +31 %. Falta refresco creativo y apertura de nuevos públicos por especialidad.</li>
+      <li><b>Google Search:</b> CPL +23 %. Faltan revisiones semanales de keywords, pujas y horarios.</li>
+      <li><b>SEO local:</b> ficha de Google Business Profile y posts periódicos sin mantener.</li>
+      <li><b>Lo que aporta más volumen hoy</b> (Meta para implantología) es exactamente lo que más necesita iteración semanal para mantener el coste por lead controlado.</li>
     </ul>
-    <p style="margin:22px 0 0;font-size:15px;color:#E8EEF7;line-height:1.6">El piloto automático funcionó los primeros meses por inercia. A partir del sexto, la curva ya rompe. Lo que se pierde aquí <b style="color:#fff">no es presupuesto invertido — son pacientes que no han entrado por la puerta</b>.</p>
+    <p class="cta">Volver a una gestión activa, con revisión semanal estructurada de los tres canales, devuelve el coste por contacto a los niveles del periodo anterior. <b>Hablamos de la diferencia entre captar un paciente por 4 € o por 5 €. A volumen de clínica, son varios miles de euros al año en eficiencia recuperada.</b></p>
   </div>
 
   <footer class="sig">
@@ -255,7 +271,7 @@
       <a href="mailto:hola@josepcid.com">hola@josepcid.com</a> · <a href="https://josepcid.com">josepcid.com</a>
     </div>
     <div class="stamp">
-      Fuentes: Google Ads, Meta Business Manager, Google Search Console.<br>
+      Fuentes: Meta Business Manager (API), Google Ads, Google Search Console.<br>
       Periodo comparado: 19 nov 2025 → 19 may 2026 vs 21 may → 18 nov 2025.
     </div>
   </footer>
